@@ -16,7 +16,7 @@ export default function Navbar() {
             setColorchange(true);
         }
         else {
-            if (window.scrollY > 680) {
+            if (window.scrollY > 680 ) {
                 setColorchange(true);
             }
             else {
@@ -24,7 +24,7 @@ export default function Navbar() {
             }
         };
     }
-
+    
 
     window.addEventListener('scroll', changeNavbarColor);
     return (

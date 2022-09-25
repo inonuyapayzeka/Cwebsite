@@ -13,7 +13,7 @@ class Home extends Component {
                 <div style={{ backgroundImage: `url(${bg})` }} className="  scroll-auto grid grid-cols-4 grid-rows-4 h-screen bg-center bg-cover  ">
                     <div className='col-span-4 '> <Navbar></Navbar></div>
                     <div className='flex col-start-1 col-end-3 row-start-2 row-end-5 text-left  '  >
-                        <div className='grid grid-rows-4 text-color1 font-fonts2 ml-20    '>
+                        <div className='grid grid-rows-4 md:text-color1 font-fonts2 ml-20 text-color4   '>
                             <div className='text-6xl font-bold '>MERHABA </div>
                             <div className='text-xl '>İnönü Üniversitesi Yapay Zeka Topluluğu</div>
                             <div className='text-lg overflow-clip '>Adipisicing adipisicing ad minim quis dolor proident exercitation. Laborum mollit quis deserunt aliquip incididunt excepteur velit mollit quis. Nisi do eu cillum sint incididunt sunt reprehenderit deserunt amet deserunt ad commodo. Sit consectetur ea ut dolore quis. Consectetur reprehenderit pariatur enim in reprehenderit nostrud qui veniam reprehenderit. Ipsum duis duis irure ullamco et.</div>
