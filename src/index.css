@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar{
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+  
+.navbar.colorChange{
+    z-index: 50;
+    background-color: #2e0d49;
+    position: fixed;
+}
