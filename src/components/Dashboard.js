@@ -13,6 +13,7 @@ class Dashboard extends Component {
         return (
             <div >
                 <Routes>
+                    <Route exact path='Home'element={ < Home /> } ></Route>
                     <Route exact path=''element={ < Home /> } ></Route>
                     <Route exact path='Cwebsite'element={ < Home /> } ></Route>
                     <Route exact path='Contact'element={ < Contact /> } ></Route>
