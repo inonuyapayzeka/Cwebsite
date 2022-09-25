@@ -4,7 +4,7 @@ import Info from './Info';
 import Announcement from './Announcement';
 import Footer from './Footer';
 import Home from './Home';
-import {  Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navi from "./Navbar"
 import Contact from './Contact';
 import Teams from './Teams';
@@ -12,15 +12,16 @@ class Dashboard extends Component {
     render() {
         return (
             <div >
-                <Routes>
-                    <Route exact path='Home'element={ < Home /> } ></Route>
-                    <Route exact path=''element={ < Home /> } ></Route>
-                    <Route exact path='Cwebsite'element={ < Home /> } ></Route>
-                    <Route exact path='Contact'element={ < Contact /> } ></Route>
-                    <Route exact path='teams'element={ < Teams /> } ></Route>
-                    
-              </Routes>
-          <Footer></Footer>
+                <Routes Basename="/Cwebsite" >
+                    <Route exact path='Home' element={< Home />} ></Route>
+                    <Route exact path='' element={< Home />} ></Route>
+                    <Route exact path='Cwebsite' element={< Home />} ></Route>
+                    <Route exact path='Contact' element={< Contact />} ></Route>
+                    <Route exact path='teams' element={< Teams />} ></Route>
+
+                </Routes>
+
+                <Footer></Footer>
             </div>
         );
     }
