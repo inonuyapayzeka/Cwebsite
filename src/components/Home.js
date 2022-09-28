@@ -4,6 +4,7 @@ import bg from "./../websites img/bgımg.jpg"
 import About from './About';
 import Info from './Info';
 import Announcement from './Announcement';
+import { Button } from 'reactstrap';
 class Home extends Component {
     render() {
     
@@ -30,7 +31,7 @@ class Home extends Component {
                 <Announcement></Announcement>
                 <Info></Info>
                 <About></About>
-               
+                <div className='h-12 w-12 bg-indigo-400 rounded-full  fixed z-50'   >   </div>
             </div>
         );
     }

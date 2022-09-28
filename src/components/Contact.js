@@ -12,7 +12,7 @@ function Contact() {
   }
   return (
     <>
-        <Navbar>  </Navbar>
+        <Navbar></Navbar>
        
  {message()}
       <div className="hidden sm:block" aria-hidden="true">

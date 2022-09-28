@@ -10,7 +10,8 @@
 }
   
 .navbar.colorChange{
-    z-index: 50;
+
     background-color: #2e0d49;
-    position: fixed;
+    position: relative;
+
 }

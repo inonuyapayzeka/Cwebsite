@@ -1,27 +1,23 @@
-import { Component, useState } from "react";
+import {  useState } from "react";
 import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
     Link
 } from 'react-router-dom';
-import Teams from "./Teams";
 export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
     const [colorChange, setColorchange] = useState(false);
 
     const changeNavbarColor = () => {
 
-        if (window.location.pathname === "/teams" || window.location.pathname === "/Contact") {
-            setColorchange(true);
-        }
-        else {
+        if (window.location.pathname === "/Home" || window.location.pathname === "/") {
             if (window.scrollY > 680 ) {
                 setColorchange(true);
             }
             else {
                 setColorchange(false);
             }
+        }
+        else {
+           setColorchange(true);
         };
     }
     
@@ -83,6 +79,10 @@ export default function Navbar() {
                             <li className="text-color1 hover:text-white hover:bg-color1  hover:rounded-full  ">
                                 <a href="/Home">ANASAYFA</a>
                             </li>
+                            <li className="text-color1 hover:text-white hover:bg-color1  hover:rounded-full  ">
+                                <a href="/Blog">BLOG</a>
+                            </li>
+                            
 
                             <li className="text-color1 hover:text-white hover:bg-color1  hover:rounded-full">
                                 <a href="/Contact">İLETİŞİM</a>
@@ -91,7 +91,7 @@ export default function Navbar() {
                                 <a href="/teams">EKİP</a>
                             </li>
                             <li className="bg-color1 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full ">
-                                <a href="#">KAYIT OL/GİRİŞ YAP</a>
+                                <a href="/LoginPage">KAYIT OL/GİRİŞ YAP</a>
                             </li>
                         </ul>
                     </div>
